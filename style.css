@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    min-height: 100vh;
+    color: #222;
+}
+
+header {
+    background: #33245c;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 12px;
+}
+
+main {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+.creator {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px #777;
+}
+
+.creator h2 {
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+
+button {
+    background: #673ab7;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #452080;
+}
+
+#comicSection {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#comicSection h2 {
+    margin-bottom: 20px;
+}
+
+#comic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.panel {
+    background: white;
+    padding: 15px;
+    border: 4px solid #33245c;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #888;
+}
+
+.illustration {
+    font-size: 65px;
+    padding: 25px;
+    background: #f1e8ff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.panel h3 {
+    color: #673ab7;
+    margin-bottom: 10px;
+}
+
+.panel p {
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #33245c;
+}
+
+#downloadBtn {
+    display: none;
+}
+
+@media(max-width: 600px) {
+    #comic {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Comic & Story Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎨 AI Comic & Illustrated Story Creator</h1>
+    <p>Turn your imagination into beautiful comic stories!</p>
+</header>
+
+<main>
+    <section class="creator">
+        <h2>Create Your Story</h2>
+
+        <input type="text" id="topic"
+        placeholder="Enter your story topic...">
+
+        <select id="genre">
+            <option value="Adventure">Adventure</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Science Fiction">Science Fiction</option>
+            <option value="Friendship">Friendship</option>
+        </select>
+
+        <button onclick="generateComic()">
+            Generate AI Comic ✨
+        </button>
+    </section>
+
+    <section id="comicSection">
+        <h2>Your Illustrated Comic Story</h2>
+        <div id="comic"></div>
+        <button id="downloadBtn" onclick="downloadComic()">
+            Download Story
+        </button>
+    </section>
+</main>
+
+<footer>
+    <p>Created using AI-inspired Story Generation Technology</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
